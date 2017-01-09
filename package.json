@@ -13,9 +13,9 @@
     "coding-soccer": "./bin/coding-soccer"
   },
   "dependencies": {
+    "math-kit": "^0.3.8"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "tea-time -R dot -O"
   },
