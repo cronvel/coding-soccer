@@ -1,9 +1,18 @@
 
-var codingSoccer = require( '../lib/coding-soccer.js' ) ;
-var Phy = codingSoccer.Phy ;
+var soccer = require( '../lib/coding-soccer.js' ) ;
 
 
-var phy = Phy.create() ;
+var state = soccer.GameState.create() ;
+var phy = soccer.Phy.create() ;
 
+//console.log( state ) ;
 
+state.ball.bVector.position.z = 10 ;
+console.log( state.ball.bVector ) ;
+
+for ( var i = 0 ; i < 100 ; i ++ )
+{
+	phy.update( state ) ;
+	console.log( state.ball.bVector ) ;
+}
 
