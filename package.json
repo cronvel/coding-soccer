@@ -1,0 +1,50 @@
+{
+  "name": "coding-soccer",
+  "version": "0.0.1",
+  "description": "Code the best soccer team!",
+  "main": "lib/coding-soccer.js",
+  "engines": {
+    "node": ">=4.5.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "bin": {
+    "coding-soccer": "./bin/coding-soccer"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "tea-time -R dot -O"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cronvel/coding-soccer.git"
+  },
+  "keywords": [
+    "soccer",
+    "AI",
+    "game"
+  ],
+  "author": "Cédric Ronvel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cronvel/coding-soccer/issues"
+  },
+  "config": {
+    "tea-time": {
+      "coverDir": [
+        "lib"
+      ]
+    }
+  },
+  "copyright": {
+    "title": "Coding Soccer",
+    "years": [
+      2017
+    ],
+    "owner": "Cédric Ronvel"
+  }
+}
