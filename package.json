@@ -13,7 +13,12 @@
     "coding-soccer": "./bin/coding-soccer"
   },
   "dependencies": {
-    "math-kit": "^0.4.1"
+    "logfella": "^0.3.48",
+    "math-kit": "^0.4.2",
+    "minimist": "^1.2.0",
+    "nextgen-events": "^0.9.8",
+    "server-kit": "^0.4.2",
+    "terminal-kit": "^0.26.1"
   },
   "devDependencies": {},
   "scripts": {
