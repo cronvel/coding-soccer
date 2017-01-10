@@ -16,11 +16,14 @@ main {
 
 .field {
 	position: absolute;
-	height:2000px;
-	width:3000px;
 	background-position:0 0;
 	background-image:url('images/field-line.png') , url('images/field.jpg') ;
+
+	/*
+	height:2000px;
+	width:3000px;
     background-size:3000px 2000px , 500px ;
+	*/
 
 	transition: transform 300ms linear;
 
