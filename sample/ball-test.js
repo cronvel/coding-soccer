@@ -2,18 +2,17 @@
 var soccer = require( '../lib/coding-soccer.js' ) ;
 
 
-var state = soccer.GameState.create() ;
-var phy = soccer.Phy.create() ;
+var game = soccer.Game.create() ;
 
-//console.log( state ) ;
+//console.log( game.state ) ;
 
-//state.ball.bVector.position.z = 10 ;
-state.ball.bVector.vector.y = 20 ;
-console.log( state.ball.bVector , state.ball.accelVector ) ;
+//game.state.ball.bVector.position.z = 10 ;
+game.state.ball.bVector.vector.y = 20 ;
+console.log( game.state.ball.bVector , game.state.ball.accelVector ) ;
 
 for ( var i = 0 ; i < 100 ; i ++ )
 {
-	phy.update( state ) ;
-	console.log( state.ball.bVector , state.ball.accelVector ) ;
+	game.update() ;
+	console.log( game.state.ball.bVector , game.state.ball.accelVector ) ;
 }
 
