@@ -13,7 +13,7 @@
     "coding-soccer": "./bin/coding-soccer"
   },
   "dependencies": {
-    "math-kit": "^0.4.1"
+    "math-kit": "^0.4.2"
   },
   "devDependencies": {},
   "scripts": {
