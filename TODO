@@ -1,0 +1,6 @@
+Match init:
+	- number of players
+	- field size
+	- frameRate
+	- match length
+	- rules
