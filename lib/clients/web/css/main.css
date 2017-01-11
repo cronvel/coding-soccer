@@ -1,13 +1,25 @@
 html , body {
 	margin:0;
 	padding:0;
+	font-family: sans-serif;
 }
 
 main {
 	position:relative;
-	overflow:hidden;
 	height:100vh;
 	width:100vw;
+}
+
+.debug {
+	position:absolute;
+	top:0;
+	left:0;
+	background: rgba(0, 0, 0, 0.5);
+	color:white;
+	font-size:18px;
+	z-index:10;
+	white-space: nowrap;
+	padding: 10px;
 }
 
 .ball , .player , .field , .playerContainer , .ballContainer {
@@ -17,16 +29,9 @@ main {
 .field {
 	position: absolute;
 	background-position:0 0;
-	background-image:url('images/field-line.png') , url('images/field.jpg') ;
-
-	/*
-	height:2000px;
-	width:3000px;
-    background-size:3000px 2000px , 500px ;
-	*/
+	background-image:url('../images/field-line.png') , url('../images/field.jpg') ;
 
 	transition: transform 300ms linear;
-
 	/*transform:perspective( 2000px ) rotateX( 45deg );*/
 }
 
@@ -34,26 +39,26 @@ main {
 	background-color:rgba(0,0,0,0.6);
 }
 
-.playerContainer , .ballContainer {
+.playerContainer , .ballContainer , .ball , .player {
 	top:0;
 	left:0;
 	position:absolute;
 
 	transition-property: transform;
-	transition-duration: 300ms;
+	transition-duration: 30ms;
 	transition-timing-function: linear;
 }
 
 .shadow , .ball , .player {
-	position:absolute;
-	top:0;
-	left:0;
 	height:100%;
 	width:100%;
 }
 
 
 .ballContainer {
+	top:-10px;
+	left:-10px;
+
 	width:20px;
 	height:20px;
 }
@@ -63,14 +68,11 @@ main {
 }
 .ball {
 	z-index:1;
-	background-image: url('images/ball.png') ;
+	background-image: url('../images/ball.png') ;
 	background-size: 60px;
-	background-position: 30px 30px;
 	box-shadow: 0 0 2px #000 inset;
 
 	transition-property: transform , background-position;
-	transition-duration: 300ms;
-	transition-timing-function: linear;
 }
 
 .team[data-team="blue"] .player {
@@ -82,6 +84,9 @@ main {
 }
 
 .playerContainer {
+	top:-25px;
+	left:-25px;
+
 	width:50px;
 	height:50px;
 }
@@ -93,8 +98,4 @@ main {
 .player {
 	z-index:1;
 	border-top: 5px solid #FFF;
-
-	transition-property: transform;
-	transition-duration: 300ms;
-	transition-timing-function: linear;
 }

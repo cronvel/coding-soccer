@@ -1,0 +1,40 @@
+.progress {
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	cursor:pointer;
+	background-color:rgba(0 , 0 , 0 , 0.5 );
+	padding:10px;
+
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+}
+
+.progressBar {
+	height:12px;
+	width:20%;
+	padding:10px;
+	background-color:rgba(0 , 100 , 200 , 0.5 );
+}
+
+.controls {
+	text-align: center;
+	width: 12px;
+	padding: 4px;
+	border-radius: 4px;
+}
+.controls:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.playState:before {
+	color: white;
+}
+.playState[data-state="play"]:before {
+	content: '>' ;
+}
+.playState[data-state="pause"]:before {
+	content: '||' ;
+}

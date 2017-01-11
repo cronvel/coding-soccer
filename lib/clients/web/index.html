@@ -4,15 +4,23 @@
 	<title>foot</title>
 	<meta charset="utf-8" />
 
-	<link rel="stylesheet" type="text/css" href="main.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/progress.css" />
 </head>
 <body>
+	<div class="debug"></div>
 	<main>
 		<div class="field"></div>
 	</main>
 
+	<div class="progress">
+		<div class="controls playState" data-state="play"></div>
+		<div class="progressBar"></div>
+	</div>
+
 	<script src="main.js"></script>
 	<script src="renderer.js"></script>
 	<script src="websocket.js"></script>
+	<script src="tools.js"></script>
 </body>
 </html>
