@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "logfella": "^0.3.48",
-    "math-kit": "^0.5.3",
+    "math-kit": "^0.5.4",
     "minimist": "^1.2.0",
     "nextgen-events": "^0.9.8",
     "server-kit": "^0.4.3",
