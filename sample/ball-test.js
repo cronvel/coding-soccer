@@ -18,7 +18,7 @@ game.entity.ball.boundVector.vector.y = 10 ;
 
 console.log( game.entity.ball.boundVector ) ; //, game.entity.ball.accelVector ) ;
 
-for ( var i = 0 ; i < 100 ; i ++ )
+for ( var i = 0 ; i < 48 ; i ++ )
 {
 	game.update() ;
 	console.log( '#' + i + ':' , game.entity.ball.boundVector ) ; //, game.entity.ball.accelVector ) ;
