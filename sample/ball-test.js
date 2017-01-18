@@ -4,7 +4,7 @@ var soccer = require( '../lib/coding-soccer.js' ) ;
 
 var game = soccer.Game.create() ;
 
-console.log( game ) ;
+//console.log( game ) ;
 
 //*
 game.entity.ball.boundVector.position.z = 10 ;
@@ -18,11 +18,17 @@ game.entity.ball.boundVector.position.z = 0.15 ;
 game.entity.ball.boundVector.vector.y = 10 ;
 //*/
 
-console.log( game.entity.ball.boundVector ) ; //, game.entity.ball.accelVector ) ;
 
-for ( var i = 0 ; i <= 160 ; i ++ )
+//console.log( game.entity.ball.boundVector ) ; //, game.entity.ball.accelVector ) ;
+console.error( "Here we go!" ) ;
+var time = Date.now() ;
+
+for ( var i = 0 ; i <= 100000 ; i ++ )
 {
 	game.update() ;
-	console.log( '#' + i + ':' , game.entity.ball.boundVector ) ; //, game.entity.ball.accelVector ) ;
+	//console.log( '#' + i + ':' , game.entity.ball.boundVector ) ; //, game.entity.ball.accelVector ) ;
 }
+
+time = Date.now() - time ;
+console.error( "Done!" , time , "ms" ) ;
 
