@@ -21,8 +21,8 @@ dotPos.set( 3 , 0 , 0 ) ;
 //console.log( cubeShape.isOverlapping( cubePos , dotShape , dotPos ) ) ;
 
 
-//boxPos.set( 2.4 , 0 , 0 ) ;
-boxShape = physic.Shape.Box.create( 5 , 5 , 5 ) ;
+boxShape = physic.Shape.Box.create( 1 , 5 , 5 ) ;
+boxPos.set( 1.4 , 0 , 0 ) ;
 console.log() ;
 console.log( cubeShape.isOverlapping( cubePos , boxShape , boxPos ) ) ;
 console.log() ;
