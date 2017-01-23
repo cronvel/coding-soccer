@@ -14,41 +14,39 @@ var dotShape = physic.Shape.Dot.create() ;
 var sphereShape = physic.Shape.Sphere.create( 2 ) ;
 var sphere2Shape = physic.Shape.Sphere.create( 1 ) ;
 
-//*
-spherePos.set( 2 , 1 , 0 ) ;
+
+/*
+spherePos.set( 3 , 1 , 0 ) ;
 console.log() ;
-console.log( sphereShape.isOverlapping( spherePos , sphere2Shape , sphere2Pos ) ) ;
+console.log( sphereShape.getCollision( spherePos , sphere2Shape , sphere2Pos ) ) ;
 console.log() ;
-console.log( sphere2Shape.isOverlapping( sphere2Pos , sphereShape , spherePos ) ) ;
+console.log( sphere2Shape.getCollision( sphere2Pos , sphereShape , spherePos ) ) ;
 //*/
+
 
 /*
 spherePos.set( -2 , -1 , -1 ) ;
 console.log() ;
-console.log( cubeShape.isOverlapping( cubePos , sphereShape , spherePos ) ) ;
+console.log( cubeShape.getCollision( cubePos , sphereShape , spherePos ) ) ;
 console.log() ;
-console.log( sphereShape.isOverlapping( spherePos , cubeShape , cubePos ) ) ;
+console.log( sphereShape.getCollision( spherePos , cubeShape , cubePos ) ) ;
 //*/
 
-/*
-console.log( cubeShape ) ;
-console.log( dotShape ) ;
+
+//*
+dotPos.set( 0.8 , 0.3 , 0 ) ;
+console.log( cubeShape.getCollision( cubePos , dotShape , dotPos ) ) ;
+//console.log( dotShape.getCollision( dotPos , cubeShape , cubePos ) ) ;
 //*/
 
-/*
-console.log( cubeShape.isOverlapping( cubePos , dotShape , dotPos ) ) ;
-
-dotPos.set( 3 , 0 , 0 ) ;
-console.log( cubeShape.isOverlapping( cubePos , dotShape , dotPos ) ) ;
-//*/
 
 /*
 boxShape = physic.Shape.Box.create( 1 , 5 , 5 ) ;
 boxPos.set( 1 , 0 , 0 ) ;
 console.log() ;
-console.log( cubeShape.isOverlapping( cubePos , boxShape , boxPos ) ) ;
+console.log( cubeShape.getCollision( cubePos , boxShape , boxPos ) ) ;
 console.log() ;
-console.log( boxShape.isOverlapping( boxPos , cubeShape , cubePos ) ) ;
+console.log( boxShape.getCollision( boxPos , cubeShape , cubePos ) ) ;
 //*/
 
 
