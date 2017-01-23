@@ -33,14 +33,14 @@ console.log( sphereShape.getCollision( spherePos , cubeShape , cubePos ) ) ;
 //*/
 
 
-//*
+/*
 dotPos.set( 0.8 , 0.3 , 0 ) ;
 console.log( cubeShape.getCollision( cubePos , dotShape , dotPos ) ) ;
-//console.log( dotShape.getCollision( dotPos , cubeShape , cubePos ) ) ;
+console.log( dotShape.getCollision( dotPos , cubeShape , cubePos ) ) ;
 //*/
 
 
-/*
+//*
 boxShape = physic.Shape.Box.create( 1 , 5 , 5 ) ;
 boxPos.set( 1 , 0 , 0 ) ;
 console.log() ;
