@@ -24,7 +24,7 @@ console.log( sphere2Shape.getCollision( sphere2Pos , sphereShape , spherePos ) )
 //*/
 
 
-/*
+//*
 spherePos.set( -2 , -1 , -1 ) ;
 console.log() ;
 console.log( cubeShape.getCollision( cubePos , sphereShape , spherePos ) ) ;
@@ -40,9 +40,9 @@ console.log( dotShape.getCollision( dotPos , cubeShape , cubePos ) ) ;
 //*/
 
 
-//*
-boxShape = physic.Shape.Box.create( 1 , 5 , 5 ) ;
-boxPos.set( 1 , 0 , 0 ) ;
+/*
+boxShape = physic.Shape.Box.create( 0.5 , 0.5 , 0.5 ) ;
+boxPos.set( 0.5 , 0.5 , 0.51 ) ;
 console.log() ;
 console.log( cubeShape.getCollision( cubePos , boxShape , boxPos ) ) ;
 console.log() ;
