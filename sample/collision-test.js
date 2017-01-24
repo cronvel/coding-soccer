@@ -25,7 +25,7 @@ console.log( sphere2Shape.getCollision( sphere2Pos , sphereShape , spherePos ) )
 
 
 /*
-spherePos.set( 2 , 2 , 0 ) ;
+spherePos.set( 3 , 0 , 0 ) ;
 console.log() ;
 console.log( cubeShape.getCollision( cubePos , sphereShape , spherePos ) ) ;
 console.log() ;
