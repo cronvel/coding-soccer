@@ -15,7 +15,7 @@
   "dependencies": {
     "array-kit": "^0.1.2",
     "logfella": "^0.3.48",
-    "math-kit": "^0.7.1",
+    "math-kit": "^0.8.0",
     "minimist": "^1.2.0",
     "nextgen-events": "^0.9.8",
     "server-kit": "^0.4.3",
