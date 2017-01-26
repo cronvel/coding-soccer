@@ -13,7 +13,7 @@
     "coding-soccer": "./bin/coding-soccer"
   },
   "dependencies": {
-    "array-kit": "^0.1.2",
+    "array-kit": "^0.1.3",
     "logfella": "^0.3.48",
     "math-kit": "^0.8.0",
     "minimist": "^1.2.0",
