@@ -15,8 +15,9 @@ var sphereShape = physic.Shape.Sphere.create( 2 ) ;
 var sphere2Shape = physic.Shape.Sphere.create( 1 ) ;
 
 
-//*
+/*
 spherePos.set( 2 , 1 , 0 ) ;
+//sphere2Pos.set( 0 , 0 , 0 ) ;
 console.log() ;
 console.log( sphereShape.getCollision( spherePos , sphere2Shape , sphere2Pos ) ) ;
 console.log() ;
@@ -40,7 +41,7 @@ console.log( dotShape.getCollision( dotPos , cubeShape , cubePos ) ) ;
 //*/
 
 
-/*
+//*
 boxShape = physic.Shape.Box.create( 0.5 , 0.5 , 0.5 ) ;
 boxPos.set( 0.5 , 0.5 , 0.51 ) ;
 console.log() ;
