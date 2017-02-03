@@ -7,6 +7,7 @@ var boxPos = physic.Vector3D( 0 , 0 , 0 ) ;
 var dotPos = physic.Vector3D( 0 , 0 , 0 ) ;
 var spherePos = physic.Vector3D( 0 , 0 , 0 ) ;
 var sphere2Pos = physic.Vector3D( 0 , 0 , 0 ) ;
+var cylinderPos = physic.Vector3D( 0 , 0 , 0 ) ;
 var octahedronPos = physic.Vector3D( 0 , 0 , 0 ) ;
 
 var cubeOldPos = physic.Vector3D( 5 , 0 , 0 ) ;
@@ -14,6 +15,7 @@ var boxOldPos = physic.Vector3D( 5 , 0 , 0 ) ;
 var dotOldPos = physic.Vector3D( 5 , 0 , 0 ) ;
 var sphereOldPos = physic.Vector3D( 5 , 0 , 0 ) ;
 var sphere2OldPos = physic.Vector3D( 5 , 0 , 0 ) ;
+var cylinderOldPos = physic.Vector3D( 5 , 0 , 0 ) ;
 var octahedronOldPos = physic.Vector3D( 5 , 0 , 0 ) ;
 
 var cubeShape = physic.Shape.Box.create( 2 , 2 , 2 ) ;
@@ -21,6 +23,7 @@ var boxShape = physic.Shape.Box.create( 3 , 4 , 5 ) ;
 var dotShape = physic.Shape.Dot.create() ;
 var sphereShape = physic.Shape.Sphere.create( 2 ) ;
 var sphere2Shape = physic.Shape.Sphere.create( 1 ) ;
+var cylinderShape = physic.Shape.Cylinder.create( { x: 0, y: 0, z: 1 } , 1.5 ) ;
 var octahedronShape = physic.Shape.Octahedron.create( 2 ) ;
 
 
@@ -46,7 +49,7 @@ console.log( cubeShape.getContinuousCollision( cubeOldPos , cubePos , sphereShap
 //*/
 
 
-//*
+/*
 dotOldPos.set( 4 , 0 , 0.5 ) ;
 //dotOldPos.set( 6 , 0 , 0 ) ;
 dotPos.set( 0 , 0.4 , 0.5 ) ;
@@ -56,6 +59,18 @@ console.log() ;
 console.log( dotShape.getContinuousCollision( dotOldPos , dotPos , octahedronShape , octahedronOldPos , octahedronPos ) ) ;
 console.log() ;
 console.log( octahedronShape.getContinuousCollision( octahedronOldPos , octahedronPos , dotShape , dotOldPos , dotPos ) ) ;
+//*/
+
+
+//*
+dotOldPos.set( 6 , 0 , 0 ) ;
+dotPos.set( 0 , 0 , 0 ) ;
+cylinderOldPos.set( 0 , 0 , 0 ) ;
+cylinderPos.set( 0 , 0 , 0 ) ;
+console.log() ;
+console.log( dotShape.getContinuousCollision( dotOldPos , dotPos , cylinderShape , cylinderOldPos , cylinderPos ) ) ;
+console.log() ;
+console.log( cylinderShape.getContinuousCollision( cylinderOldPos , cylinderPos , dotShape , dotOldPos , dotPos ) ) ;
 //*/
 
 
