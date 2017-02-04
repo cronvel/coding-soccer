@@ -23,7 +23,7 @@ main {
 }
 
 .ball , .player , .field , .playerContainer , .ballContainer {
-	/*will-change: transform , background-position;*/
+	will-change: transform , background-position;
 }
 
 .field {
@@ -31,7 +31,7 @@ main {
 	background-position:0 0;
 	background-image:url('../images/field-line.png') , url('../images/field.jpg') ;
 
-	transition: transform 300ms linear;
+	transition: transform 33ms linear;
 	/*transform:perspective( 2000px ) rotateX( 45deg );*/
 }
 
@@ -39,19 +39,22 @@ main {
 	background-color:rgba(0,0,0,0.6);
 }
 
+
 .playerContainer , .ballContainer , .ball , .player {
 	top:0;
 	left:0;
 	position:absolute;
 
 	transition-property: transform;
-	transition-duration: 30ms;
+	transition-duration: 33ms;
 	transition-timing-function: linear;
 }
+
 
 .shadow , .ball , .player {
 	height:100%;
 	width:100%;
+	border-radius:50%;
 }
 
 
@@ -61,16 +64,14 @@ main {
 
 	width:20px;
 	height:20px;
+	z-index:2;
 }
 
-.ballContainer .ball , .ballContainer .shadow {
-	border-radius:10px;
-}
 .ball {
-	z-index:1;
+	z-index:2;
 	background-image: url('../images/ball.png') ;
 	background-size: 60px;
-	box-shadow: 0 0 2px #000 inset;
+	box-shadow: 0 0 4px #000 inset;
 
 	transition-property: transform , background-position;
 }
@@ -89,10 +90,6 @@ main {
 
 	width:50px;
 	height:50px;
-}
-
-.playerContainer .player , .playerContainer .shadow {
-	border-radius:50px;
 }
 
 .player {

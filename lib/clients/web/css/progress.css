@@ -3,6 +3,7 @@
 	bottom:0;
 	left:0;
 	width:100%;
+	box-sizing: border-box;
 	cursor:pointer;
 	background-color:rgba(0 , 0 , 0 , 0.5 );
 	padding:10px;
@@ -13,10 +14,9 @@
 }
 
 .progressBar {
+	flex-grow: 1;
 	height:12px;
-	width:20%;
-	padding:10px;
-	background-color:rgba(0 , 100 , 200 , 0.5 );
+	background-color: grey;
 }
 
 .controls {

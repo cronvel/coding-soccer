@@ -1,0 +1,73 @@
+[data-balloon]:after {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    z-index: 10;
+
+    animation-name: pop2;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    /*animation-timing-function: ease-in-out;*/
+
+	background: rgba(255, 255, 255, 0.9);
+	color: #000;
+	content: attr(data-balloon);
+	font-size: 28px;
+	margin-bottom: 14px;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: translate(-50% , 10%);
+    }
+    20% , 80% {
+        opacity: 1;
+
+        transform-origin: top;
+        transform: translate(-50% , -20%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50% , 10%);
+    }
+}
+
+
+
+
+@keyframes pop2 {
+    from, 20%, 40%, 60%, 80%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate(-50% , 10%) scale3d(.3, .3, .3);
+    }
+
+    20% {
+        transform: translate(-50% , 10%) scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+        transform: translate(-50% , 10%) scale3d(.9, .9, .9);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate(-50% , 10%) scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+        transform: translate(-50% , 10%) scale3d(.97, .97, .97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50% , 10%) scale3d(1, 1, 1);
+    }
+}

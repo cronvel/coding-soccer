@@ -1,0 +1,14 @@
+.smileys {
+	position: absolute;
+	top:0;
+	right:0;
+	font-size:32px;
+}
+.smileys span {
+	cursor:pointer;
+	display:inline-block;
+	background:rgba(255,255,255,0.8);
+	border-radius:4px;
+	margin:8px;
+	padding:8px;
+}
