@@ -63,8 +63,8 @@ console.log( octahedronShape.getContinuousCollision( octahedronOldPos , octahedr
 
 
 //*
-dotOldPos.set( 6 , 0 , 0 ) ;
-dotPos.set( 0 , 0 , 0 ) ;
+dotOldPos.set( 6 , 1.5 , 0 ) ;
+dotPos.set( 0 , 1.5 , 0 ) ;
 cylinderOldPos.set( 0 , 0 , 0 ) ;
 cylinderPos.set( 0 , 0 , 0 ) ;
 console.log() ;
