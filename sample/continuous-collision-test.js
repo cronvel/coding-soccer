@@ -8,6 +8,7 @@ var dotPos = physic.Vector3D( 0 , 0 , 0 ) ;
 var spherePos = physic.Vector3D( 0 , 0 , 0 ) ;
 var sphere2Pos = physic.Vector3D( 0 , 0 , 0 ) ;
 var cylinderPos = physic.Vector3D( 0 , 0 , 0 ) ;
+var cylinder2Pos = physic.Vector3D( 0 , 0 , 0 ) ;
 var octahedronPos = physic.Vector3D( 0 , 0 , 0 ) ;
 
 var cubeOldPos = physic.Vector3D( 5 , 0 , 0 ) ;
@@ -16,6 +17,7 @@ var dotOldPos = physic.Vector3D( 5 , 0 , 0 ) ;
 var sphereOldPos = physic.Vector3D( 5 , 0 , 0 ) ;
 var sphere2OldPos = physic.Vector3D( 5 , 0 , 0 ) ;
 var cylinderOldPos = physic.Vector3D( 5 , 0 , 0 ) ;
+var cylinder2OldPos = physic.Vector3D( 5 , 0 , 0 ) ;
 var octahedronOldPos = physic.Vector3D( 5 , 0 , 0 ) ;
 
 var cubeShape = physic.Shape.Box.create( 2 , 2 , 2 ) ;
@@ -24,6 +26,7 @@ var dotShape = physic.Shape.Dot.create() ;
 var sphereShape = physic.Shape.Sphere.create( 2 ) ;
 var sphere2Shape = physic.Shape.Sphere.create( 1 ) ;
 var cylinderShape = physic.Shape.Cylinder.create( { x: 0, y: 0, z: 1 } , 1.5 ) ;
+var cylinder2Shape = physic.Shape.Cylinder.create( { x: 0, y: 0, z: 1 } , 1.5 ) ;
 var octahedronShape = physic.Shape.Octahedron.create( 2 ) ;
 
 
@@ -62,15 +65,28 @@ console.log( octahedronShape.getContinuousCollision( octahedronOldPos , octahedr
 //*/
 
 
-//*
-dotOldPos.set( 6 , 1.5 , 0 ) ;
-dotPos.set( 0 , 1.5 , 0 ) ;
+/*
+dotOldPos.set( 6 , 0.5 , 0 ) ;
+dotPos.set( 0 , 0.5 , 0 ) ;
 cylinderOldPos.set( 0 , 0 , 0 ) ;
 cylinderPos.set( 0 , 0 , 0 ) ;
 console.log() ;
 console.log( dotShape.getContinuousCollision( dotOldPos , dotPos , cylinderShape , cylinderOldPos , cylinderPos ) ) ;
 console.log() ;
 console.log( cylinderShape.getContinuousCollision( cylinderOldPos , cylinderPos , dotShape , dotOldPos , dotPos ) ) ;
+//*/
+
+
+//*
+cylinder2OldPos.set( 6 , 0 , 0 ) ;
+cylinder2Pos.set( 0 , 0 , 0 ) ;
+cylinderOldPos.set( 0 , 0 , 0 ) ;
+cylinderPos.set( 0 , 0 , 0 ) ;
+//cylinder2Shape = physic.Shape.Cylinder.create( { x: 1, y: 1, z: 0 } , 1.5 ) ;
+console.log() ;
+console.log( cylinder2Shape.getContinuousCollision( cylinder2OldPos , cylinder2Pos , cylinderShape , cylinderOldPos , cylinderPos ) ) ;
+console.log() ;
+console.log( cylinderShape.getContinuousCollision( cylinderOldPos , cylinderPos , cylinder2Shape , cylinder2OldPos , cylinder2Pos ) ) ;
 //*/
 
 
