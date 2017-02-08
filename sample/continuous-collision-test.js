@@ -92,7 +92,7 @@ cylinderPos.set( 0 , 0 , 0 ) ;
 console.log() ;
 console.log( cylinder2Shape.getContinuousCollision( cylinder2OldPos , cylinder2Pos , cylinderShape , cylinderOldPos , cylinderPos ) ) ;
 console.log() ;
-console.log( cylinderShape.getContinuousCollision( cylinderOldPos , cylinderPos , cylinder2Shape , cylinder2OldPos , cylinder2Pos ) ) ;
+//console.log( cylinderShape.getContinuousCollision( cylinderOldPos , cylinderPos , cylinder2Shape , cylinder2OldPos , cylinder2Pos ) ) ;
 //*/
 
 
