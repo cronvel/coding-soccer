@@ -36,7 +36,7 @@ var iCylinder2Shape = physic.Shape.InfiniteCylinder.create( { x: 0, y: 0, z: 1 }
 var octahedronShape = physic.Shape.Octahedron.create( 2 ) ;
 
 
-/*
+//*
 spherePos.set( 2 , 1 , 0 ) ;
 console.log() ;
 console.log( sphereShape.getContinuousCollision( spherePos , sphere2Shape , sphere2Pos ) ) ;
@@ -83,7 +83,7 @@ console.log( iCylinderShape.getContinuousCollision( iCylinderOldPos , iCylinderP
 //*/
 
 
-//*
+/*
 cylinder2OldPos.set( 6 , 1 , 0 ) ;
 cylinder2Pos.set( 0 , 1 , 0 ) ;
 cylinderOldPos.set( 0 , 0 , 0 ) ;
