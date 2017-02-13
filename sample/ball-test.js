@@ -24,7 +24,7 @@ game.entity.ball.boundVector.vector.y = 10 ;
 console.error( "Here we go!" ) ;
 var time = Date.now() ;
 
-for ( var i = 0 ; i <= 60 ; i ++ )
+for ( var i = 0 ; i <= 20 ; i ++ )
 {
 	game.update() ;
 	console.log( '-'.repeat(20) + '\n#' + i + ':' , game.entity.ball.boundVector ) ; //, game.entity.ball.accelVector ) ;
