@@ -31,16 +31,16 @@ var game = soccer.Game.create() ;
 //console.log( game ) ;
 
 //*
-game.entity.ball.boundVector.position.z = 10 ;
-//game.entity.ball.boundVector.vector.y = 10 ;
-game.entity.player.boundVector.position.z = 8 ;
-game.entity.player.boundVector.position.y = 0.001 ;
-//game.entity.player.boundVector.position.y = 0 ;
+game.entities.ball.boundVector.position.z = 10 ;
+//game.entities.ball.boundVector.vector.y = 10 ;
+game.entities.player.boundVector.position.z = 8 ;
+game.entities.player.boundVector.position.y = 0.001 ;
+//game.entities.player.boundVector.position.y = 0 ;
 //*/
 
 /*
-game.entity.ball.boundVector.position.z = 0.15 ;
-game.entity.ball.boundVector.vector.y = 10 ;
+game.entities.ball.boundVector.position.z = 0.15 ;
+game.entities.ball.boundVector.vector.y = 10 ;
 //*/
 
 
@@ -51,14 +51,14 @@ gamepad.on( 'move' , function( id , axis , value ) {
 	
 	if ( axis === 0 )
 	{
-		game.entity.player.input.speedVector.x = 8 * value ;
+		game.entities.player.input.speedVector.x = 8 * value ;
 	}
 	else if ( axis === 1 )
 	{
-		game.entity.player.input.speedVector.y = 8 * value ;
+		game.entities.player.input.speedVector.y = 8 * value ;
 	}
 	
-	//entity.input.throttle = value ;
+	//entities.input.throttle = value ;
 } ) ;
 
 
@@ -68,7 +68,7 @@ function update()
 	game.update( 0.1 ) ;
 	
 	term.column( 1 ).eraseLineAfter() ;
-	term.bold.yellow( "Vector %f %f" , game.entity.player.boundVector.vector.x , game.entity.player.boundVector.vector.y ) ;
+	term.bold.yellow( "Vector %f %f" , game.entities.player.boundVector.vector.x , game.entities.player.boundVector.vector.y ) ;
 }
 
 setInterval( update , 100 ) ;
