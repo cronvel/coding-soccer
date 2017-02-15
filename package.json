@@ -22,7 +22,10 @@
     "terminal-kit": "^0.26.1",
     "uphysics": "^0.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gamepad": "^1.4.2",
+    "terminal-kit": "^0.26.1"
+  },
   "scripts": {
     "test": "tea-time -R dot -O"
   },
