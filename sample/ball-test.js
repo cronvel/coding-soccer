@@ -4,15 +4,33 @@ var soccer = require( '../lib/coding-soccer.js' ) ;
 
 var game = soccer.Game.create() ;
 
-//console.log( game.state ) ;
+//console.log( game ) ;
 
-//game.state.ball.bVector.position.z = 10 ;
-game.state.ball.bVector.vector.y = 20 ;
-console.log( game.state.ball.bVector , game.state.ball.accelVector ) ;
+//*
+game.ballEntity.boundVector.position.z = 10 ;
+//game.ballEntity.boundVector.vector.y = 10 ;
+var player = game.teams[ 0 ].playerEntities[ 0 ] ;
+player.boundVector.position.z = 8 ;
+player.boundVector.position.y = 0.001 ;
+//player.boundVector.position.y = 0 ;
+//*/
 
-for ( var i = 0 ; i < 100 ; i ++ )
+/*
+game.ballEntity.boundVector.position.z = 0.15 ;
+game.ballEntity.boundVector.vector.y = 10 ;
+//*/
+
+
+//console.log( game.ballEntity.boundVector ) ; //, game.ballEntity.accelVector ) ;
+console.error( "Here we go!" ) ;
+var time = Date.now() ;
+
+for ( var i = 0 ; i <= 20 ; i ++ )
 {
 	game.update() ;
-	console.log( game.state.ball.bVector , game.state.ball.accelVector ) ;
+	//console.log( '-'.repeat(20) + '\n#' + i + ':' , game.ballEntity.boundVector ) ; //, game.ballEntity.accelVector ) ;
 }
+
+time = Date.now() - time ;
+console.error( "Done!" , time , "ms" ) ;
 
