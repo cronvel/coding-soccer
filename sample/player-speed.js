@@ -2,6 +2,7 @@
 var soccer = require( '../lib/coding-soccer.js' ) ;
 var term = require( 'terminal-kit' ).terminal ;
 //var physic = require( '../lib/physic.js' ) ;
+var math = require( 'math-kit' ) ;
 
 
 
@@ -44,6 +45,8 @@ game.ballEntity.boundVector.position.z = 0.15 ;
 game.ballEntity.boundVector.vector.y = 10 ;
 //*/
 
+console.log( "Top-Speed:" , player.data.topSpeed ) ;
+
 
 
 // Listen for move events on all gamepads
@@ -69,7 +72,11 @@ function update()
 	game.update( 0.1 ) ;
 	
 	term.column( 1 ).eraseLineAfter() ;
-	term.bold.yellow( "Vector %f %f" , player.boundVector.vector.x , player.boundVector.vector.y ) ;
+	term.bold.yellow( "Speed %f (%f ; %f) -- Position (%f ; %f)" ,
+		math.round( player.boundVector.vector.length , 0.01 ) ,
+		math.round( player.boundVector.vector.x , 0.01 ) , math.round( player.boundVector.vector.y , 0.01 ) ,
+		math.round( player.boundVector.position.x , 0.01 ) , math.round( player.boundVector.position.y , 0.01 )
+	) ;
 }
 
 setInterval( update , 100 ) ;
