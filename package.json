@@ -15,12 +15,12 @@
   "dependencies": {
     "array-kit": "^0.1.3",
     "logfella": "^0.3.49",
-    "math-kit": "^0.11.5",
+    "math-kit": "^0.11.9",
     "minimist": "^1.2.0",
     "nextgen-events": "^0.9.8",
     "server-kit": "^0.4.3",
     "terminal-kit": "^0.26.1",
-    "uphysics": "^0.1.6"
+    "uphysics": "^0.1.7"
   },
   "devDependencies": {
     "gamepad": "^1.4.2",
