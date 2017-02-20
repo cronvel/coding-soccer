@@ -1,8 +1,9 @@
 - main
-	- renderer
-		- players
-		- balls
-		- field
+	-playback
+		- renderer
+			- players
+			- balls
+			- field
 	- ui
 		- replay
 		- scoreboard
