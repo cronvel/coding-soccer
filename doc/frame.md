@@ -1,6 +1,6 @@
 
 
-* frameNumber: int auto-increment
+* frameNumber: int, auto-increment
 * ball:
 	* boundVector:
 		* position: Vector3D, position of the ball
@@ -12,7 +12,10 @@
 			* position: Vector3D, position of the player
 			* vector: Vector3D, speed vector of the player
 		* facing: angle in radian, the direction the player is facing
-
+* events: array of events
+	* type: string, event code
+	* ... various key/value: data of the event
+	
 
 
 		
