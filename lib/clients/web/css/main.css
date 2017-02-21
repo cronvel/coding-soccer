@@ -96,3 +96,15 @@ main {
 	z-index:1;
 	border-top: 5px solid #FFF;
 }
+
+/* tmp */
+.goalPost {
+	background: #FFF;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	z-index: 2;
+	position: absolute;
+	top: -5px;
+	left: -5px;
+}
