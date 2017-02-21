@@ -110,4 +110,8 @@ main {
 }
 
 .svgField {
+	position: absolute;
+	z-index: 3;
 }
+
+
