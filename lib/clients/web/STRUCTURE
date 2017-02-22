@@ -2,14 +2,16 @@
 	- client (websocket)
 	- playback
 		- renderer
-			- players
-			- balls
 			- field
+			- balls
+			- players
+			- theme
 			- audio
 
-		- ui
+		- osd
 			- replay
 			- scoreboard
 			- big messages
 			- audio
 			- live chat
+
