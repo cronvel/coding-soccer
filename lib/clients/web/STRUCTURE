@@ -1,10 +1,15 @@
 - main
-	-playback
+	- client (websocket)
+	- playback
 		- renderer
 			- players
 			- balls
 			- field
-	- ui
-		- replay
-		- scoreboard
-		- big messages
+			- audio
+
+		- ui
+			- replay
+			- scoreboard
+			- big messages
+			- audio
+			- live chat
